@@ -6,4 +6,6 @@ This includes the following:
 2) bhar_hist.py: Computes a time averaged black hole accretion rates and histories (using high time resolution bhALL file) for all central SMBHs in the caesar catalogues.
                  Time averaged quantities are written to the corresponding catalogues created by bhallanalyse.
 3) radio_luminosity.py: Computes the 1.4GHz radio luminosities for all galaxies in caesar for star formation and AGN (using the KJF08 relation).
-                        P1.4 is then written to the above-mentioned black hole catalogues.                       
+                        P1.4 is then written to the above-mentioned black hole catalogues.
+
+NB: instantaneous BHARs will differ between the caesar values and the black hole catalogues due to stochastic changes (mostly from bondi) over very short timescales. It is worth keeping in mind your t=0 and what is being compared. If one is concerned with small-scale black hole demographics, the black hole files should be used, for galaxy scale (stellar/gas/dm) properties the caesar file should be used.
