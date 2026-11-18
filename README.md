@@ -5,6 +5,9 @@ This includes the following:
                      Output is a/a set of catalogues with black hole details as per bhALL and corresponding to the caesar snapshot number and in order of the caesar galaxy catalogue (i.e listed by group ID)
 2) bhar_hist.py: Computes a time averaged black hole accretion rates and histories (using high time resolution bhALL file) for all central SMBHs in the caesar catalogues.
                  Time averaged quantities are written to the corresponding catalogues created by bhallanalyse.
+
+UPDATE: bhallanalyse.py and bhar_hist.py has been combined and made more efficient in bh_analysis.py i.e. bh_analysis now does both crossmatching and computes time-averaged quantities to produce the bh catalogues for both Simba and SimbaC.
+
 3) radio_luminosity.py: Computes the 1.4GHz radio luminosities for all galaxies in caesar for star formation and AGN (using the KJF08 relation).
                         P1.4 is then written to the above-mentioned black hole catalogues.
 
